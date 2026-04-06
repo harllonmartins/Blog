@@ -193,4 +193,4 @@ MIT
 
 ---
 
-Made with ❤️ for content creators who value simplicity and privacy.
+Made with AI.
