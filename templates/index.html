@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{siteTitle}}</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    
+    h1 a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    h1 a:hover {
+      text-decoration: underline;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 1em;
+      font-weight: 400;
+    }
+    
+    article {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    article:last-child {
+      border-bottom: none;
+    }
+    
+    h2, h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+    
+    h2 a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    h2 a:hover {
+      text-decoration: underline;
+    }
+    
+    .meta {
+      color: #999;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    
+    .tags {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+    
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .tag {
+      display: inline-block;
+      background: #f5f5f5;
+      padding: 3px 8px;
+      border-radius: 3px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 0.85em;
+    }
+    
+    .tag a {
+      color: #666;
+    }
+    
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #999;
+      font-size: 0.9em;
+    }
+    
+    footer a {
+      color: #999;
+    }
+    
+    .nav {
+      margin-bottom: 20px;
+      font-size: 0.9em;
+    }
+    
+    .nav a {
+      margin-right: 20px;
+    }
+    
+    .search-link {
+      margin-bottom: 20px;
+      font-size: 0.9em;
+    }
+    
+    .search-link a {
+      color: #0066cc;
+    }
+    
+    code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+    
+    pre {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin: 15px 0;
+    }
+    
+    pre code {
+      background: none;
+      padding: 0;
+      border-radius: 0;
+    }
+    
+    blockquote {
+      border-left: 4px solid #ddd;
+      padding-left: 15px;
+      margin: 15px 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/">{{siteTitle}}</a></h1>
+    <p class="subtitle">{{siteDescription}}</p>
+    <p class="search-link"><a href="/search.html">🔍 Search posts</a></p>
+  </header>
+  
+  <main>
+    {{postsList}}
+  </main>
+  
+  <footer>
+    <p>Built with ❤️ | <a href="/feed.xml">RSS Feed</a></p>
+  </footer>
+</body>
+</html>

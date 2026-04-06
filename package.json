@@ -1,0 +1,23 @@
+{
+  "name": "minimal-blog",
+  "version": "1.0.0",
+  "description": "A super minimal, privacy-first blog like Bear Blog",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "python3 -m http.server 8000 --directory public",
+    "dev": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "blog",
+    "static",
+    "minimal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^11.1.1",
+    "slugify": "^1.6.6"
+  }
+}

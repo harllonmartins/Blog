@@ -1,0 +1,14 @@
+{
+  "title": "My Blog",
+  "description": "A minimalist blog, built for words.",
+  "author": "Your Name",
+  "siteUrl": "http://localhost:8000",
+  "language": "en",
+  "postsPerPage": 10,
+  "theme": {
+    "primaryColor": "#000",
+    "backgroundColor": "#fff",
+    "textColor": "#000",
+    "accentColor": "#666"
+  }
+}
